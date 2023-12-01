@@ -2,7 +2,6 @@
 
 *html
 bun.lockb
-package.json
 node_modules
 docs/.vitepress/cache
 docs/.vitepress/dist
