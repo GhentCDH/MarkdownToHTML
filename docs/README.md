@@ -94,9 +94,9 @@ export default defineConfig({
 To develop and modify the webpage current run `npm run docs:dev` to build the website run `npm run docs:build` and to view the build `npm run docs:preview`. To view the contents of this repo:
 
 ````
-git clone
+git clone https://github.com/GhentCDH/MarkdownToHTML.git
 cd MarkdownToHTML
-npm -i
+npm install
 npm run docs:dev
 ````
 
