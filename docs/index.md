@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "Markdown to HTML"
   text: "A VitePress Site"
-  tagline: My great project tagline
+  tagline: Markdown to HTML documentation example
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Readme
+      link: /README
     - theme: alt
       text: GhentCDH
       link: /GhentCDH
+    - theme: alt
+      text: Markdown Examples
+      link: /markdown-examples
 
 features:
   - title: Feature A
