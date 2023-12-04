@@ -128,6 +128,13 @@ export default defineConfig({
 })
 ````
 
+### VitePress in Github Pages
+
+There is a [GitHub Action to automatically publish documentation](./.github/workflows/deploy.yml). For this repository, it automatically publishes to the  [Markdown to HTML Github Pages](https://ghentcdh.github.io/MarkdownToHTML/). To make this work a couple of thing are needed. The repository needs to be configured to enable `Pages`. To do this, go to the GitHub repository `Settings - Pages` and under `Build and deployment` choose the `Source` to be `GitHub Actions`.
+
+The [./docs/.vitepress/config.mts](./docs/.vitepress/config.mts) needs to be configured with the correct `base` url to make the static file links work: base needs to be set to `/the-repo-name/`.
+
+Once this config is done, the deploy GitHub action should build the static site and immediately deploy it to Pages automatically.
 
 ## Other static site generators
 

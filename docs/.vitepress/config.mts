@@ -2,8 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  
   title: "My Awesome Project",
   description: "A VitePress Site",
+
+  //To work correctly on github pages, set the base directory to the repository name
+  base: "/MarkdownToHTML/" ,
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
