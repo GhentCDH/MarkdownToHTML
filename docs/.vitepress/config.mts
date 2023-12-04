@@ -3,26 +3,29 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Markdown to HTML",
+  description: "A demo vitepress site",
 
-  //To work correctly on github pages, set the base directory to the repository name
+  // To work correctly on github pages, set the base directory to the repository name
   base: "/MarkdownToHTML/" ,
 
   themeConfig: {
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Readme', link: '/README' }
     ],
 
+    // Enable search
     search: {
       provider: 'local'
     },
 
+    // Populate the sidebar
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Content pages',
         items: [
           { text: 'Readme', link: '/README' },
           { text: 'GhentCDH', link: '/GhentCDH' },
@@ -32,8 +35,9 @@ export default defineConfig({
       }
     ],
 
+
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/GhentCDH/MarkdownToHTML' }
     ]
   }
 })
