@@ -91,7 +91,7 @@ export default defineConfig({
 ````
 
 
-To develop and modify the webpage current run `npm run docs:dev` to build the website run `npm run docs:build` and to view the build `npm run docs:preview`. To view the contents of this repo:
+To develop and modify the webpage current run `npm run docs:dev`. To view the contents of this repo:
 
 ````
 git clone https://github.com/GhentCDH/MarkdownToHTML.git
@@ -100,6 +100,14 @@ npm install
 npm run docs:dev
 ````
 
+To build the static html and view the result:
+
+````
+git clone https://github.com/GhentCDH/MarkdownToHTML.git
+cd MarkdownToHTML
+npm run docs:build
+npm run docs:preview
+````
 
 
 ### Search in VitePress
