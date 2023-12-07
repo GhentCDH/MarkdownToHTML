@@ -5,6 +5,13 @@ author: "JorenSix"
 date: "2023-11"
 ---
 
+
+TODO: 
+* github template repository example 
+* obsidian tests met images, 
+* obsidian header probleem ( obsidian export plugin, obsidian-export tool or filter)
+
+
 # Markdown documentation to HTML
 
 Goal is to convert markdown from various sources into a clear **static** website to host together with projects. The markdown souce can describe workflows, guides or documentation of code or procedures.
@@ -15,46 +22,6 @@ Some sources of the mardown files:
 * Source code project documentation in [GitHub flavored Markdown](https://github.github.com/gfm/)
 * Internal knowledge base documentation from e.g. [outline](https://www.getoutline.com/)
 
-
-## Pandoc
-
-[Pandoc](https://pandoc.org/) is a __universal document converter__. It can convert from standard markdown, GitHub flavored markdown and CommonMark to HTML. Unfortunately the default style of the HTML is rather dry. The advantages are that pandoc is a well suported stable and easy to use. After installation it takes a single step to convert documents:
-
-```
-pandoc README.md -f markdown -t html -s -o readme.pandoc.html
-```
-
-With additional [pandoc html and CSS themes](https://jez.io/pandoc-markdown-css-theme/) the output can look much better.
-
-```
-pandoc \
-  --from markdown \
-  --to html5+smart \
-  --template=pandoc-template/template \
-  --css="pandoc-template/theme.css" \
-  --css="pandoc-template/paper.css" \
-  --toc \
-  --wrap=none \
-  --output docs/pandoc-templated-readme.html \
-  docs/README.md
-open docs/pandoc-multiple-files.html
-```
-
-There is no search functionality. There is no easy way to link to other documents. Pandoc is designed with a single large document in mind. E.g. a book with multiple chapters in markdown is converted to a single HTML document or PDF by concatenating the markdown files. E.g. this creates a single html file:
-
-```
-pandoc \
-  --from markdown \
-  --to html5+smart \
-  --output docs/pandoc-multiple-files.html \
-  docs/README.md docs/GentCDH.md
-open docs/pandoc-multiple-files.html
-```
-
-Clean temporary files
-````
-rm docs/*html
-````
 
 ## VitePress
 
@@ -89,8 +56,6 @@ export default defineConfig({
   }
 })
 ````
-
-
 To develop and modify the webpage current run `npm run docs:dev`. To view the contents of this repo:
 
 ````
