@@ -7,8 +7,8 @@ date: "2023-11"
 
 
 TODO: 
-* github template repository example 
-* obsidian tests met images, 
+* github template repository example
+* obsidian tests met images,
 * obsidian header probleem ( obsidian export plugin, obsidian-export tool or filter)
 
 
