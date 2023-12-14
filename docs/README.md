@@ -111,6 +111,21 @@ Every environment and platform has its Markdown extensions. For Obsidian this is
 
 To use it first download the latest  [Obsidian Export](https://github.com/zoni/obsidian-export/releases/) executable and run it on a folder `obsidian-export Obsidian/Docs OutputDir`
 
+## Testing with Docker
+
+If you have docker, there is no a Dockerfile provided to try out the live update version without needing to install any additional dependencies. First build the container and name it `markdown_to_html` using the following command, this step should be only done once: 
+
+```
+docker build . -t markdown_to_html
+```
+
+To start the vitepress server run the container. The `-v` flag maps the local `docs` folder to the expected location in the host `/app/docs`. The port mapping can be configured as well. Here vitepress starts in the container on port 3000 which is mapped to the local port 3000.
+
+````
+docker run -v $PWD/docs:/app/docs -p 3000:3000 markdown_to_html
+````
+
+
 ## Credits
 
 * [Obsidian Export](https://github.com/zoni/obsidian-export)
