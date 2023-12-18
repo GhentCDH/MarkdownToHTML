@@ -18,11 +18,11 @@ hero:
       link: /markdown-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Obsidian to standard markdown
+    details: Converts obidian flavored markdon to common markdown
+  - title: Static website
+    details: Spits out an easily hostable static website.
+  - title: Searchable
+    details: Using VitePress, a client-side search interface is provided automatically.
 ---
 

@@ -29,8 +29,7 @@ export default defineConfig({
         items: [
           { text: 'Readme', link: '/README' },
           { text: 'GhentCDH', link: '/GhentCDH' },
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown Examples', link: '/markdown-examples' }
         ]
       }
     ],

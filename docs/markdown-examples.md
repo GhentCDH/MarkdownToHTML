@@ -80,6 +80,19 @@ This is a dangerous warning.
 This is a details block.
 :::
 
+## Some Common Markdown elements
+
+This text contains some common Markdown elements[^1] like tables images and so forth to see how they look in the rendered HTML. For example a wide Table
+
+| **Column 1**                          | **Column 2**                          | **Column 3**                          | **Column 4**                          | **Column 5**                          |
+| ------------------                    | ------------------                    | ------------------                    | ------------------                    | ------------------                    |
+| This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. |
+| This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. | This is some text. This is some text. |
+
+
+[^1]: For example a footnote
+
+
 ## More
 
 Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

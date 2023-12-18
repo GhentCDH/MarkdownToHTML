@@ -1,22 +1,15 @@
 ---
 title: "Markdown To HTML Readme"
-subtitle: "Some subtitle"
-author: "JorenSix"
+subtitle: "Convert markdown to a modern, searchable static site."
+author: "Joren Six"
 date: "2023-11"
 ---
 
-
-TODO: 
-* github template repository example
-* obsidian tests met images,
-* obsidian header probleem ( obsidian export plugin, obsidian-export tool or filter)
-
-
 # Markdown documentation to HTML
 
-Goal is to convert markdown from various sources into a clear **static** website to host together with projects. The markdown souce can describe workflows, guides or documentation of code or procedures.
+Goal is to convert markdown from various sources into a clear **static and searchable** website to host together with projects. The markdown souce can describe workflows, guides or documentation of code or procedures.
 
-Some sources of the mardown files: 
+Some sources of mardown files: 
 
 * [Obsidian](https://obsidian.md/): an easy to use graphical interface to create markdown document which are almost standard markdown
 * Source code project documentation in [GitHub flavored Markdown](https://github.github.com/gfm/)
@@ -34,7 +27,7 @@ npm add -D vitepress
 npx vitepress init
 ````
 
-The index.md file is created and links to other files. It needs manual changes to work as expected. Also the sidebar links need to be manually configured in the `config.mts` file: 
+The index.md file is created and links to other files. It needs manual changes to work as expected. Also the sidebar links need to be manually configured in the [`config.mts`](docs/.vitepress/config.mts) file: 
 
 ````
 import { defineConfig } from 'vitepress'
@@ -73,6 +66,8 @@ cd MarkdownToHTML
 npm run docs:build
 npm run docs:preview
 ````
+
+
 
 
 ### Search in VitePress
